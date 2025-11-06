@@ -99,7 +99,7 @@ namespace TaskManagement.API.Controllers
         [HttpPatch("{id}/status")]
         [ProducesResponseType(typeof(TaskDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> UpdateTaskStatus(Guid id, [FromBody] TaskStatus status)
+        public async Task<IActionResult> UpdateTaskStatus(Guid id, [FromBody] TaskEntityStatus status)
         {
             try
             {
